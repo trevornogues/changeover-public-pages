@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Privacy Policy — Changeover</title>
-  <meta name="description" content="Privacy Policy for the Changeover mobile app." />
-  <meta name="theme-color" content="#F6F4EF" />
+  <meta name="description" content="Privacy Policy for the Changeover mobile tennis journal." />
+  <meta name="theme-color" content="#F7F5EF" />
   <link rel="stylesheet" href="/changeover-public-pages/assets/style.css" />
 </head>
 <body>
@@ -13,10 +13,137 @@
     <header class="legal-header">
       <p class="breadcrumb"><a href="/changeover-public-pages/">&larr; Changeover</a></p>
       <h1>Privacy Policy</h1>
-      <p class="effective">Draft — not yet published</p>
+      <p class="effective">Effective September 13, 2026</p>
     </header>
 
-    <p class="muted">TODO: write before App Store submission. Changeover v0 stores all tennis data on your device and does not create accounts or send data to a server.</p>
+    <p>
+      Changeover (“the App”) is a personal tennis journal published by Trevor Nogues
+      (“we,” “us”). This policy explains what data stays on your device, what leaves
+      the device when you use optional Changeover AI features, and who processes it.
+    </p>
+
+    <h2>Summary</h2>
+    <ul>
+      <li>Your match, practice, hit, and equipment journal lives on your phone.</li>
+      <li>There is no sign-up, email account, or social login.</li>
+      <li>We do not sell your data or show ads.</li>
+      <li>If you use Changeover AI (premium), a sanitized snapshot of relevant journal
+        history is sent to our backend and then to OpenAI so the companion can answer.
+        Other people’s names are removed first.</li>
+      <li>We do not keep a copy of your journal on our servers.</li>
+    </ul>
+
+    <h2>Data stored on your device</h2>
+    <p>
+      The App stores your tennis journal locally (matches, practices, casual hits,
+      equipment and setups, notes, ratings, and cached AI results) using on-device
+      storage. That journal is not synced by Changeover to other devices. It may be
+      included in your device’s own backups (for example iCloud Backup) according to
+      your system settings — that is Apple’s backup, not a Changeover cloud account.
+    </p>
+    <p>
+      On-device features such as Trends, Patterns, streak, and Competition run entirely
+      on your phone and do not require a network connection.
+    </p>
+
+    <h2>No Changeover account</h2>
+    <p>
+      Changeover does not ask you to create an email or social account. Purchases use
+      your Apple ID through the App Store. Restore Purchases re-links a subscription
+      on a new phone via Apple.
+    </p>
+
+    <h2>Anonymous identity for premium AI</h2>
+    <p>
+      When Changeover AI is available, the App silently creates an anonymous identifier
+      (Firebase Anonymous Authentication). That identifier is not a profile. It is used
+      only so our Cloud Functions can:
+    </p>
+    <ul>
+      <li>enforce usage limits, and</li>
+      <li>confirm that the Changeover AI subscription is active (via RevenueCat).</li>
+    </ul>
+    <p>
+      Reinstalling the App typically creates a new anonymous identifier. Your
+      subscription still restores through Apple.
+    </p>
+    <p>
+      On our backend we may store usage counters and a cached entitlement flag keyed
+      to that anonymous identifier. We do not store your journal entries there.
+    </p>
+
+    <h2>Changeover AI — what leaves the device</h2>
+    <p>
+      Changeover AI (narrative insights and Ask Changeover) is optional and requires
+      the premium subscription. When you refresh insights or ask a question, the App
+      builds a structured snapshot of relevant history on device, then:
+    </p>
+    <ol>
+      <li>Replaces opponent and partner names with stable aliases (for example
+        “Player A”) in structured fields and in free-text notes.</li>
+      <li>Sends that sanitized snapshot (and, for Ask, your question after the same
+        name scrub) to our Cloud Functions over HTTPS.</li>
+      <li>Our Cloud Functions call OpenAI’s API to generate the response. We set
+        <code>store: false</code> so responses are not kept as OpenAI application
+        state. OpenAI states that API data is not used to train their models. OpenAI
+        may retain limited abuse-monitoring logs under its own policies unless Zero
+        Data Retention is approved for the project.</li>
+      <li>The answer is returned to the App and cached on your device for offline use.
+        We do not retain the journal snapshot or the answer content on Changeover
+        servers after the request completes.</li>
+    </ol>
+    <p>
+      Locations, scores, ratings, and your own words in notes may be included because
+      they are what the companion reasons about. Do not put information in notes that
+      you are not willing to send for analysis when using Changeover AI.
+    </p>
+    <p>
+      If Firebase is not configured or you are offline without a usable cache, AI
+      features degrade gracefully; the rest of the journal still works.
+    </p>
+
+    <h2>Purchases</h2>
+    <p>
+      The base App is a paid download through Apple. Changeover AI is an optional
+      auto-renewable subscription processed by Apple. We use RevenueCat to help
+      verify entitlements. Apple and RevenueCat process payment-related data under
+      their own privacy policies. We do not receive your full payment card details.
+    </p>
+
+    <h2>Analytics, advertising, and tracking</h2>
+    <p>
+      Changeover does not include third-party advertising SDKs or sell personal
+      information. We do not use your journal content for advertising.
+    </p>
+
+    <h2>Children</h2>
+    <p>
+      The App is not directed at children under 13, and we do not knowingly collect
+      personal information from children under 13.
+    </p>
+
+    <h2>Your choices</h2>
+    <ul>
+      <li>You can use the journal without purchasing or using Changeover AI.</li>
+      <li>You can stop using AI features at any time; cancel the subscription in
+        your Apple ID subscriptions settings.</li>
+      <li>Deleting the App removes the on-device journal (unless restored from a
+        device backup).</li>
+    </ul>
+
+    <h2>Changes</h2>
+    <p>
+      We may update this policy as the product changes. The effective date at the
+      top will change when we do. Continued use of the App after an update means
+      you accept the revised policy.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      Questions about privacy: use the support / contact options on the Changeover
+      App Store listing, or open an issue on
+      <a href="https://github.com/trevornogues/changeover-public-pages">github.com/trevornogues/changeover-public-pages</a>.
+    </p>
 
     <footer>&copy; 2026 Trevor Nogues</footer>
   </main>

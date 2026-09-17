@@ -24,10 +24,21 @@ These are the URLs to paste into App Store Connect.
 ├── terms/
 │   └── index.html          # Terms of Service
 ├── assets/
-│   └── style.css           # Shared styles — tokens mirror Club Green
+│   ├── style.css           # Shared styles — tokens mirror Centre Lawn
+│   ├── icon.png            # App court mark (full-bleed hero)
+│   ├── favicon.png
+│   └── stripe-tile.png     # Brand stripe asset (reference)
 ├── .nojekyll               # Serve files as-is (no Jekyll)
 └── README.md
 ```
+
+## Brand
+
+Visual tokens match the app's default **Centre Lawn** palette
+(`#F5F3EC` cream, `#1C4A3A` pine, terracotta accent). The landing hero uses
+the same court mark as the app icon, the Great Vibes **Changeover** wordmark,
+and the cabana stripe ribbon — the same signature trio as Home in the app.
+
 
 ## Privacy posture (keep in sync with the app)
 

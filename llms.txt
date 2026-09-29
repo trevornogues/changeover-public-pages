@@ -1,0 +1,37 @@
+# Changeover
+
+> Changeover (App Store name: Changeover Journal) is a calm, local-first tennis journal for iPhone. Log matches, practices, and casual hits, remember what happened, and spot the patterns in your own notes. Optional Changeover AI reads a sanitized snapshot of your history when you ask it to. No account. The journal lives on your phone.
+
+- Developer: Trevor Nogues (solo project). GitHub: https://github.com/trevornogues
+- Platform: iOS. Download: https://apps.apple.com/us/app/changeover-journal/id6810293213
+- Launched: September 21, 2026 (1.0). Current version: 1.1 (September 25, 2026).
+- Audience: league, tournament, and club players who want to remember their matches. Not a live scoring app, not a stats dashboard, no social feed.
+
+## Pricing
+
+- The journal is free, with no limits: matches, practices, hits, notes, ratings, history, Patterns, streak, Competition record, equipment and string-bed hours, share cards.
+- Changeover AI: optional subscription, $14.99 per year (USD), first month free. Billed through Apple. Cancel any time in Apple ID subscriptions.
+
+## What it does
+
+- Log a match in about a minute: set-by-set score, how it felt, what worked, what didn't, what to remember for next time. Optional ratings for serve, return, forehand, backhand, net, movement, mental game, strategy.
+- Last time vs.: type an opponent you've played before and the last thing you wrote about them comes right back.
+- Patterns: on-device observations from your own notes and ratings, e.g. "You've mentioned your serve in 8 of your last 10 match notes."
+- Equipment: rackets, shoes, strings, setups with tension and strung date, hours on the string bed.
+- Trends, weekly streak, Competition record (by league/tournament/casual, surface, tiebreaks, deciding sets).
+- Share cards and transparent stickers for a session or a month.
+- Reminders: opt-in, scheduled on the phone, never sent from a server.
+- Changeover AI (subscription): narrative insights, Ask Changeover (one question, one answer from your history), practice ideas, match reflection.
+
+## Privacy
+
+- No sign-up, email, or social login. Purchases use your Apple ID.
+- Changeover AI sends a sanitized snapshot only when you ask: opponent and partner names are replaced with aliases like "Player A" on the phone before anything is sent. Requests go to Changeover's Cloud Functions and then OpenAI with store: false. Changeover does not keep a copy of the journal or the answer on its servers.
+- Anonymous usage statistics (feature-level, never journal content) can be turned off in Settings.
+
+## Pages
+
+- Home: https://trevornogues.github.io/changeover-public-pages/
+- Changelog: https://trevornogues.github.io/changeover-public-pages/changelog/
+- Privacy Policy: https://trevornogues.github.io/changeover-public-pages/privacy/
+- Terms of Service: https://trevornogues.github.io/changeover-public-pages/terms/

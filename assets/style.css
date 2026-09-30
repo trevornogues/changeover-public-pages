@@ -1,6 +1,6 @@
 /*
  * Visual tokens mirror Centre Lawn (clubGreen) in
- * changeover/src/theme/schemes.js — cream canvas, deep pine primary,
+ * changeover/src/theme/schemes.js - cream canvas, deep pine primary,
  * terracotta accent used sparingly. Script is for the wordmark only.
  */
 :root {
@@ -45,7 +45,7 @@ body {
   padding: 56px 24px 88px;
 }
 
-/* —— Brand —— */
+/* -- Brand -- */
 .app-icon {
   display: block;
   width: 64px;
@@ -85,7 +85,7 @@ body {
 .stripe span { flex: 1; background: #ffffff; }
 .stripe span:nth-child(odd) { background: var(--primary); }
 
-/* —— Type —— */
+/* -- Type -- */
 h1.page-title {
   font-size: clamp(1.85rem, 5vw, 2.35rem);
   font-weight: 600;
@@ -131,7 +131,7 @@ a {
 }
 a:hover { text-decoration: underline; text-underline-offset: 3px; }
 
-/* —— Landing —— */
+/* -- Landing -- */
 .hero { margin-bottom: 32px; }
 
 .topnav {
@@ -359,7 +359,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .links a:hover .link-title::after { color: var(--primary); }
 .link-sub { font-size: 0.95rem; color: var(--muted); line-height: 1.45; }
 
-/* —— Legal pages —— */
+/* -- Legal pages -- */
 .legal-header { margin-bottom: 36px; }
 
 .breadcrumb {

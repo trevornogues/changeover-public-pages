@@ -44,7 +44,7 @@ The Privacy and Terms URLs are the ones to paste into App Store Connect.
 
 - **App Store rating** in the hero (`.rating`) and in the JSON-LD `aggregateRating`
   is hand-copied from the listing. Refresh both after new reviews land.
-- **Pricing** ($14.99/year, first month free) appears in the pricing section, the
+- **Pricing** ($14.99/year, 2 weeks free) appears in the pricing section, the
   FAQ, the JSON-LD offers, `llms.txt`, and the changelog. Change all of them together.
 - **Screenshots** in `assets/screens/` come from `changeover/store-listing/screenshots/`
   (crop the headline band off the top, resize to 640px wide, JPEG q82).

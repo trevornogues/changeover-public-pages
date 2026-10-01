@@ -135,6 +135,18 @@
     ]
   }
   </script>
+
+  <script type="module">
+    import { analytics } from 'https://esm.sh/@heycatch/sdk@0.8.0';
+    analytics.init({
+      projectKey: 'hck_pk_UY031DYi3Xp49BNSoANPYPJPH_6PmCH8',
+      requestBatching: false,
+      install: {
+        framework: 'web',
+        agent: 'cursor',
+      },
+    });
+  </script>
 </head>
 <body>
   <main class="container">
